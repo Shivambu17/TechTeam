@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTeam</title>
+ <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color:#2c3e50;
+
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+input,select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #2980b9;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+ </style>   
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Student Registration</h1>
+        </div>
+
+        <form action="">
+            <div class="form-group">
+            <label for="fullname">Enter  full name:</label>
+            <input type="text" id="fullname" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-group">
+            <label for="email">Enter  Email:</label>
+            <input type="Email" id="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <section id="course" required>
+                    <option value="">Choose course</option>
+                    <option>Information technology</option>
+                    <option>Operation Managemnet</option>
+                    <option>Photographer</option>
+                    <option>Fishing</option>
+                    <option>Accounting</option>
+                </section>
+            </div>
+
+             <div class="form-group">
+            <label for="phone">Enter  Phone number:</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="footer">
+            @TechTeam System
+        </div>
+
+
+    </div>
+</body>
+</html>
